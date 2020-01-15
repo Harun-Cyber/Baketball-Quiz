@@ -1,12 +1,33 @@
 const containQuiz = document.getElementById("basketball-quiz");
 const containResults = document.getElementById("results");
 const submitButton = document.getElementById("submit");
+var player = {
+    Isaiah_Thomas: 0,   //175 cm    // < 6.0
+    JJ_Barea: 0,        //178 cm
+    Kemba_Walker: 0,    //183 cm
+    Trae_Young: 0,      //188 cm    // > 6.0 - < 6.4
+    Damian_Lillard: 0,  //188 cm
+    Steph_Curry: 0,     //191 cm 
+    JJ_Reddick: 0,      //193 cm
+    James_Harden: 0,    //196 cm    // > 6.4 - < 6.8
+    Kawhi_Leanard: 0,   //201 cm
+    Luka_Doncic: 0,     //201 cm
+    Paul_George: 0,     //206 cm
+    Pascal_Siakam: 0,   //206 cm
+    Bojan_Bogdanovic: 0,//208 cm   // > 6.8 - < 6.10
+    Davis_Bertans: 0,   //208 cm
+    Danilo_Galinari: 0, //208 cm
+    Karl_Anthony_Towns: 0,  //213 cm  // > 6.10
+    Jaren_Jackson_Jr: 0,    //211 cm
+    Kristaps_Porzingis: 0  //229 cm
+};
 
 function quizBuilder(){
-    //HTML-uitvoer opslaan...
+    //Eerst maak ik een output variabele die alle HTML-uitvoer bevat, inclusief vragen en antwoordkeuzes.
     const output = [];
-
-    //Een for each loop voor elke vraag...
+ 
+    //Vervolgens kan ik beginnen met het bouwen van de HTML voor elke vraag. Daarbij moet ik elke vraag als volgt doorlopen:
+    //Een for each loop voor elke vraag.
     Questions.forEach((currenQuestion, questionNumber) => {
         //De lijst met antwoordkeuzes word opgeslagen...
         const answers = [];
@@ -34,6 +55,18 @@ function quizBuilder(){
     containQuiz.innerHTML = output.join('');
 }
 function resultShower(){
+    //Verzameld alle answer containers van mijn quiz
+    const containsAnswer = containQuiz.querySelectorAll(".answers")
+
+    //De aantal vragen die de gebruiker heeft ingevuld
+    var userAnswers = 0;
+
+    //Een foreach loop voor elke vraag...
+    Questions.forEach((currenQuestion, questionNumber) => {
+        
+        //De geselecteerde antwoord vinden
+        const 
+    })
 
 }
 const Questions = [
