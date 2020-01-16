@@ -1,5 +1,58 @@
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: crimson;
+}
+
+.container {
+    width: 700px;
+    max-width: 75%;
+    background-color: wheat;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 5px;
+}
+
+.answers-container{
+    display: grid;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.button{
+    border: 1.5px solid;
+    border-color: plum;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: black;
+    outline: none;
+    background-color: pink
+}
+
+.button:hover{
+    border-color: crimson;
+}
+
+.button-start{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide{
+    display: none;
+}
