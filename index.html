@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <title>Who is your jumpshot</title>
 </head>
-    <body>
-        <div id = "basketball-quiz"></div>
-        <button id = "submit">Submit Quiz</button>
-        <div id = "results"></div>
-    </body>
+<body>
+    <div class = "container">
+        <div id = "questions" class = "hide">
+        <div id = "question">Vraag</div>
+        <div id = "buttons" class = "btn-grid">
+            <button class = "button">1</button>
+            <button class = "button">2</button>
+            <button class = "button">3</button>
+            <button class = "button">4</button>
+        </div>
+        </div>
+        <div class = "controls">
+            <button id = "button-start" class = "button-start button">Start</button>
+            <button id = "button-volgende" class = "button-volgende button hide">Volgende Vraag</button>
+        </div>
+    </div> 
     <script src="main.js"></script>
+</body>
 </html>
