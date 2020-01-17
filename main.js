@@ -65,20 +65,99 @@ function questionShower(question){
     idCounter = 0;
 }
 
-
-
 function showingPlayer(){
-    if(player.Isaiah_Thomas > player.Kawhi_Leanard){
-        window.location = "https://www.google.nl/"
+    if(player.Isaiah_Thomas > player.Kawhi_Leanard && player.Isaiah_Thomas > player.Damian_Lillard && player.Isaiah_Thomas > player.Bojan_Bogdanovic && player.Isaiah_Thomas > player.Danilo_Galinari && player.Isaiah_Thomas > player.Davis_Bertans && player.Isaiah_Thomas > player.JJ_Barea && player.Isaiah_Thomas > player.JJ_Reddick && player.Isaiah_Thomas > player.James_Harden && player.Isaiah_Thomas > player.Jaren_Jackson_Jr && player.Isaiah_Thomas > player.Karl_Anthony_Towns && player.Isaiah_Thomas > player.Kemba_Walker && player.Isaiah_Thomas > player.Kristaps_Porzingis && player.Isaiah_Thomas > player.Luka_Doncic && player.Isaiah_Thomas > player.Pascal_Siakam && player.Isaiah_Thomas > player.Paul_George && player.Isaiah_Thomas > player.Steph_Curry && player.Isaiah_Thomas > player.Trae_Young){
+        window.location = "isaiah.html"
+    }
+    if(player.JJ_Barea > player.Kawhi_Leanard && player.JJ_Barea > player.Damian_Lillard && player.JJ_Barea > player.Bojan_Bogdanovic && player.JJ_Barea > player.Danilo_Galinari && player.JJ_Barea > player.Davis_Bertans && player.JJ_Barea > player.Isaiah_Thomas && player.JJ_Barea > player.JJ_Reddick && player.JJ_Barea > player.James_Harden && player.JJ_Barea > player.Jaren_Jackson_Jr && player.JJ_Barea > player.Karl_Anthony_Towns && player.JJ_Barea > player.Kemba_Walker && player.JJ_Barea > player.Kristaps_Porzingis && player.JJ_Barea > player.Luka_Doncic && player.JJ_Barea > player.Pascal_Siakam && player.JJ_Barea > player.Paul_George && player.JJ_Barea > player.Steph_Curry && player.JJ_Barea > player.Trae_Young){
+        window.location = "barea.html"
+    }
+    if(player.Bojan_Bogdanovic > player.Kawhi_Leanard && player.Bojan_Bogdanovic > player.Damian_Lillard && player.Bojan_Bogdanovic > player.JJ_Barea && player.Bojan_Bogdanovic > player.Danilo_Galinari && player.Bojan_Bogdanovic > player.Davis_Bertans && player.Bojan_Bogdanovic > player.Isaiah_Thomas && player.Bojan_Bogdanovic > player.JJ_Reddick && player.Bojan_Bogdanovic > player.James_Harden && player.Bojan_Bogdanovic > player.Jaren_Jackson_Jr && player.Bojan_Bogdanovic > player.Karl_Anthony_Towns && player.Bojan_Bogdanovic > player.Kemba_Walker && player.Bojan_Bogdanovic > player.Kristaps_Porzingis && player.Bojan_Bogdanovic > player.Luka_Doncic && player.Bojan_Bogdanovic > player.Pascal_Siakam && player.Bojan_Bogdanovic > player.Paul_George && player.Bojan_Bogdanovic > player.Steph_Curry && player.Bojan_Bogdanovic > player.Trae_Young){
+        window.location = "bojan.html"
+    }
+    if(player.Kemba_Walker > player.Kawhi_Leanard && player.Kemba_Walker > player.Damian_Lillard && player.Kemba_Walker > player.JJ_Barea && player.Kemba_Walker > player.Danilo_Galinari && player.Kemba_Walker > player.Davis_Bertans && player.Kemba_Walker > player.Isaiah_Thomas && player.Kemba_Walker > player.JJ_Reddick && player.Kemba_Walker > player.James_Harden && player.Kemba_Walker > player.Jaren_Jackson_Jr && player.Kemba_Walker > player.Karl_Anthony_Towns && player.Kemba_Walker > player.Bojan_Bogdanovic && player.Kemba_Walker > player.Kristaps_Porzingis && player.Kemba_Walker > player.Luka_Doncic && player.Kemba_Walker > player.Pascal_Siakam && player.Kemba_Walker > player.Paul_George && player.Kemba_Walker > player.Steph_Curry && player.Kemba_Walker > player.Trae_Young){
+        window.location = "kemba.html"
     }
 }
-
-
 
 function quizResetter(){
     buttonNext.classList.add("hide")
     while (answerButton.firstChild){
         answerButton.removeChild(answerButton.firstChild)
+    }
+}
+
+function questionSix(){
+    var PressedButton = event.target
+    if(PressedButton.id == 1){
+        questions[5].answers.a = true
+        if(questions[5].answers.a){
+            player.Kawhi_Leanard++
+            player.Luka_Doncic++
+            player.Kemba_Walker++
+            player.Isaiah_Thomas++
+            player.Jaren_Jackson_Jr++
+            player.Damian_Lillard++
+            player.Davis_Bertans++
+        }
+    }
+    if(PressedButton.id == 2){
+        questions[5].answers.b = true
+        if(questions[5].answers.b){
+            player.Paul_George++
+            player.James_Harden++
+            player.JJ_Reddick++
+            player.JJ_Barea++
+            player.Danilo_Galinari++
+        }
+    }
+    if(PressedButton.id == 3){
+        questions[5].answers.c = true
+        if(questions[5].answers.c){
+            player.Karl_Anthony_Towns++
+            player.Kristaps_Porzingis++
+            player.Steph_Curry++
+            player.Pascal_Siakam++
+            player.Trae_Young++
+            player.Bojan_Bogdanovic++
+        }
+    }
+}
+
+function questionFive(){
+    var PressedButton = event.target
+    if(PressedButton.id == 1){
+        questions[4].answers.a = true
+        if(questions[4].answers.a){
+            player.Isaiah_Thomas++
+            player.Steph_Curry++
+            player.James_Harden++
+            player.Damian_Lillard++
+            player.Kemba_Walker++
+            player.Danilo_Galinari++
+            player.Luka_Doncic++
+        }
+    }
+    if(PressedButton.id == 2){
+        questions[4].answers.b = true
+        if(questions[4].answers.b){
+            player.Kristaps_Porzingis++
+            player.Jaren_Jackson_Jr++
+            player.JJ_Reddick++
+            player.Trae_Young++
+            player.Pascal_Siakam++
+            player.Kawhi_Leanard++
+            player.Davis_Bertans++
+        }
+    }
+    if(PressedButton.id == 3){
+        questions[4].answers.c = true
+        if(questions[4].answers.c){
+            player.Karl_Anthony_Towns++
+            player.JJ_Barea++
+            player.Bojan_Bogdanovic++
+            player.Paul_George++
+        }
     }
 }
 
@@ -88,16 +167,33 @@ function questionFour(){
         questions[3].answers.a = true
         if(questions[3].answers.a){
             player.Bojan_Bogdanovic++
+            player.Damian_Lillard++
+            player.Isaiah_Thomas++
+            player.JJ_Barea++
+            player.Karl_Anthony_Towns++
+            player.James_Harden++
+            player.Davis_Bertans++
         }
     }
     if(PressedButton.id == 2){
         questions[3].answers.b = true
         if(questions[3].answers.b){
+            player.Kawhi_Leanard++
+            player.Danilo_Galinari++
+            player.JJ_Reddick++
+            player.Kristaps_Porzingis++
+            player.Paul_George++
         }
     }
     if(PressedButton.id == 3){
         questions[3].answers.c = true
         if(questions[3].answers.c){
+            player.Steph_Curry++
+            player.Trae_Young++
+            player.Kemba_Walker++
+            player.Jaren_Jackson_Jr++
+            player.Luka_Doncic++
+            player.Pascal_Siakam++
         }
     }
 }
@@ -266,6 +362,10 @@ function questionOne(){
 function resultShower(){
     questionOne()
     questionTwo()
+    questionThree()
+    questionFour()
+    questionFive()
+    questionSix()
     if(questionArray.length > questionCurrent + 1){
         buttonNext.classList.remove("hide")
         questionCurrent++
@@ -326,12 +426,11 @@ function resultShower(){
             ]
         },
         {
-            question: "Als je de bal schiet, is de bal dan gelijk aan je hoofd, boven je hoofd of onder je hoofd?",
+            question: "Als je de bal schiet, spring je dan naar achter of naar voren?",
             answers: [
-                {text: "De bal is gelijk aan mijn hoofd", a: false},
-                {text: "De bal is boven mijn hoofd", b: false},
-                {text: "De bal is onder mijn hoofd", c: false}
+                {text: "Ik spring naar achteren", a: false},
+                {text: "Ik spring naar voren", b: false},
+                {text: "Ik spring recht zonder naar voren of achter te gaan", c: false}
             ]
         }
     ]
-
